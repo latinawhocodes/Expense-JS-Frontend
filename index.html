@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+      <title>Flatiron Expensify</title>
+      <!-- @author: Stephanie Alyssa Yesilyurt =^.^= -->
+
+      <script src="https://kit.fontawesome.com/0ce9394f8e.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="./stylesheets/styles.css">      
+   </head>
+
+   <body>
+      <h1 class="text-center htag">Flatiron Expensify   <i class="fas fa-piggy-bank"></i></h1>
+
+      <p class="app-description">Do you keep asking yourself where all your money is going? Tired of wondering and keeping hundreds of old receipts? Welcome to Flatiron Expensify! The perfect app to help you keep track of your spending and get you back on track to saving up for your dream vacation! </p><p class="app-instructions">In the form below, select from the available categories and enter the amount of the transaction. You can select a date from the dropdown menu and enter a short optional description.</p>
+
+      <img src="./stylesheets/images/PieChart.png">
+      <span><form  id = "new-entry-form" action="#">
+         
+         <div class="div-form">
+            <div class="form-group">
+               <label for="expense">Expense Category</label>
+               <select class="custom-select" name="expense" id="expense-select">
+                  <option value=1>Utilities</option>
+                  <option value=2>Education</option>
+                  <option value=3>Shopping</option>
+                  <option value=4>Medical</option>
+                  <option value=5>Household</option>
+                  <option value=6>Pets</option>
+                  <option value=7>Miscellaneous</option>
+               </select>
+             </div>
+
+            <div class="form-group">
+               <label for="amount">Amount</label>
+               <input class="form-control" type="integer" name="amount" id="amount">
+            </div>
+
+            <div class="form-group">
+               <label for="description">Description</label>
+               <input class="form-control" type="text" name="description" id="description">
+            </div>
+
+            <div class="form-group">
+               <label for="date">Date</label>
+               <input class="form-control" type="date" name="date" id="date">
+            </div>
+
+            <input type="submit" value="Submit Expense" class="btn  btn-warning"/>
+         </div>
+      </form></span>
+
+      <h4> Your Expenses: </h4>
+         <ul class="entry-list"> 
+         </ul>
+
+      <script src="./models/entry.js"></script>
+      <script src="./models/expense.js"></script>
+      <script src="./api-fetch.js"></script>
+      <script src="./app.js"></script>
+   </body>
+</html>
