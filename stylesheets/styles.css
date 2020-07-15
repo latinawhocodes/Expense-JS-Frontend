@@ -1,0 +1,57 @@
+body {
+    background-image: url("./images/piggy-bank.jpeg");
+
+    font-color: black; 
+    font-family: Georgia, 'Calibri', Times, serif;
+}
+
+p {
+    text-align: justify;
+    padding-left: 30px; 
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center; 
+    font-weight: 6000;
+    padding-bottom: 35px;
+}
+
+img {
+    height: 450px; 
+    vertical-align: middle;
+    border-radius: 8px;
+    border-color: beige; 
+    width: 40%;
+}
+
+#new-entry-form {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+input {
+    padding-left: 10px;
+    display: inline-block;
+    float: left;
+    margin: 2px; 
+}
+
+label {
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: left; 
+}
+
+.custom-select {
+    padding-left: 10px;
+    display: inline-block;
+    float: left;
+    margin: 2px;
+}
+
+.entry-list {
+
+}
