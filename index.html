@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,12 @@
       <!-- @author: Stephanie Alyssa Yesilyurt =^.^= -->
 
       <script src="https://kit.fontawesome.com/0ce9394f8e.js" crossorigin="anonymous"></script>
-      <link rel="stylesheet" href="./stylesheets/styles.css">      
+      <link rel="stylesheet" href="./stylesheets/styles.css">
+
+      <!--<style>
+         body {background-image: url("./stylesheets/images/piggy-bank.jpeg");
+      </style>-->
+      
    </head>
 
    <body>
@@ -20,7 +25,8 @@
       <img src="./stylesheets/images/PieChart.png">
       <span><form  id = "new-entry-form" action="#">
          
-         <div class="div-form">
+         <div class="col-sm-3">
+
             <div class="form-group">
                <label for="expense">Expense Category</label>
                <select class="custom-select" name="expense" id="expense-select">
@@ -53,13 +59,13 @@
          </div>
       </form></span>
 
-      <h4> Your Expenses: </h4>
+      <h4> Here are your expenses so far:</h4>
          <ul class="entry-list"> 
          </ul>
 
       <script src="./models/entry.js"></script>
       <script src="./models/expense.js"></script>
-      <script src="./api-fetch.js"></script>
+      <script src="./apiData.js"></script>
       <script src="./app.js"></script>
    </body>
 </html>

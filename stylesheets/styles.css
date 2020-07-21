@@ -23,11 +23,22 @@ img {
     border-radius: 8px;
     border-color: beige; 
     width: 40%;
+    /* border-style: double;
+    width: 40%;
+
+    display:block;
+    margin-left: auto; 
+    margin-right: auto; 
+    padding-top: 35px;*/
 }
 
 #new-entry-form {
     display: inline-block;
     padding-left: 10px;
+/*    text-align: left-justify; 
+    color: black; 
+    display: flex; 
+    flex: 1; */
 }
 
 input {
