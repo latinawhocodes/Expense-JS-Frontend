@@ -11,7 +11,6 @@ class Entry {
   }
 
   static renderAllEntries() {
-    
     Entry.all.forEach(entry => 
       entryCollection.append(entry.convertToDOMFormat(entryCollection))
     )
@@ -46,7 +45,7 @@ deleteEntry(){
        
     let deleteButton = document.createElement("i")
     deleteButton.addEventListener("click", event => this.deleteEntry(event, this))
-    deleteButton.setAttribute("class", "fas fa-trash")
+    deleteButton.setAttribute("class", "fas fa-backspace")
     li.append(deleteButton)
     return li
   }
